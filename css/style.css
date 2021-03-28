@@ -106,25 +106,60 @@ body {
     width: 360px;
     min-height: 260px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
     margin: 0 0 30px;
 }
-
+.promotions__item a{
+text-decoration: none;
+}
 .promotions__item--woman {
     background-image: url("../img/promotions-woman.jpg");
     background-size: cover;
 }
 
-.promotions__item--man,
-.promotions__item--kids,
-.promotions__item--accesories {
+.promotions__item--man{
     background-image: url("../img/promotions-man.jpg");
+    background-size: cover;
+}
+.promotions__item--kids{
+    background-image: url("../img/promotions-kids.jpg");
     background-size: cover;
 }
 
 .promotions__item--accesories {
+    background-image: url("../img/promotions-accesories.jpg");
+    background-size: cover;
     width: 100%;
+}
+
+.promotions__title{
+    font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.promotions__text{
+    color: var(--dark-pink-color);
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.products__title{
+    font-size: 30px;
+line-height: 36px;
+color: #222222;
+text-align: center;
+}
+.products__text{
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
 }
 
 .product__button {
@@ -135,10 +170,12 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 48px;
 }
 
 .products__item {
     width: 360px;
+    margin-bottom: 30px;
 }
 
 .product__img {
@@ -148,4 +185,52 @@ body {
 .product__description {
     background: var(--gray-color);
     padding: 25px 29px 20px 17px;
+}
+.product_button__all{
+    background-color: var(--dark-pink-color);
+    border: 1px solid #FF6A6A;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 13px 38px;
+}
+
+.bottom{
+    background-color: var(--black-color);
+    min-height: 341px;
+    margin-top: 95px;
+    color: #FBFBFB;
+}
+
+.bottom__list{
+    display: flex;
+    padding: 103px 0;
+    justify-content: center;
+}
+.bottom__item{
+    width: 360px;
+    height: 130px;
+    text-align: center;
+}
+.bottom__img{
+    width: 45px;
+}
+.bottom__title{
+margin: 28px 0 16px 0;
+}
+.bottom__text{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+    min-width: 360px;
+}
+
+footer{background: rgba(244, 244, 244, 0.7);
+background-image: url(/img/footer-bg.jpg);}
+
+.footer__subscribe{
+
+}
+.footer__copyright{
+    
 }
