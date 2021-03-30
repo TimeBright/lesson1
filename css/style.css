@@ -2,6 +2,7 @@
     --black-color: #222222;
     --pink-color: #F1E4E6;
     --dark-pink-color: #F16D7F;
+    --pink-cololor-button:#E05C6E;
     --gray-color: #F8F8F8;
     --white-color:#ffffff;
 }
@@ -256,7 +257,7 @@ background-image: url(/img/footer-bg.jpg);}
 
 .footer__section{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 448px;
 }
@@ -300,10 +301,29 @@ font-style: italic;
     font-weight: bold;
 }
 
+.footer__subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .footer__subscribe_form{
     background: #E1E1E1;
     width: 256px;
     height: 49px;
+    margin-top: 32px;
+    border-radius: 50px 0 0 50px;
+
+}
+
+.footer__subscribe_button{
+    font-size: 14px;
+    line-height: 17px;
+    padding: 20px;
+    background-color: var(--pink-cololor-button);
+    border-radius: 0 50px 50px 0;
+    color: #FFFFFF;
 }
 
 .footer__bottom{
