@@ -482,7 +482,9 @@ input[type=email]:focus {
 }
 
 .footer__img-social {
-    background-color: var(--white-color);
+    fill: var(--black-color);
+    width: 14px;
+    height: 17px;
 }
 
 .footer__copyright_text {
@@ -504,4 +506,17 @@ input[type=email]:focus {
     align-items: center;
     background-color: var(--white-color);
 }
-.footer__link-soc{}
+
+.footer__item-social:hover {
+    background-color: var(--dark-pink-color);
+    fill: var(--white-color);
+}
+
+.footer__link-social:hover {
+    background-color: var(--dark-pink-color);
+    fill: var(--white-color);
+}
+
+.footer__item-social:hover {
+    fill: var(--white-color);
+}
