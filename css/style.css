@@ -105,9 +105,10 @@ body {
 
 .header__button:hover+.header__navigation {
     display: block;
-    
+
 }
-.header__button:hover{
+
+.header__button:hover {
     fill: var(--dark-pink-color);
 }
 
@@ -369,9 +370,11 @@ body {
     min-width: 360px;
 }
 
+
 footer {
-    background: rgba(244, 244, 244, 0.7);
-    background-image: url(/img/footer-bg.jpg);
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .footer__section {
