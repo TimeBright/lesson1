@@ -8,6 +8,7 @@
     --gray-link-menu-color: #6F6E6E;
     --white-color-subscribe: #E1E1E1;
     --smoky-color: #fbfbfb;
+    --header__button-color: #E8E8E8;
 }
 
 
@@ -104,6 +105,10 @@ body {
 
 .header__button:hover+.header__navigation {
     display: block;
+    
+}
+.header__button:hover{
+    fill: var(--dark-pink-color);
 }
 
 .header__navigation:hover {
@@ -128,6 +133,7 @@ body {
 .header__button {
     background: transparent;
     border: none;
+    fill: var(--header__button-color);
     margin: 0 33px 0 0;
     cursor: pointer;
 }
@@ -265,9 +271,29 @@ body {
     margin-top: 18px;
 }
 
-.product__button {
-    display: none;
+.product__button::before {
+    content: '';
+    background-image: url(../img/cart.svg);
+    background-size: 23px;
+    padding: 3px 14px;
+    background-repeat: no-repeat;
+
 }
+
+.product__button {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    padding: 14px 16px 11px 16px;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white-color);
+    cursor: pointer;
+    border: 1px solid var(--white-color);
+}
+
 
 .products__list {
     display: flex;
@@ -279,10 +305,16 @@ body {
 .products__item {
     width: 360px;
     margin-bottom: 30px;
+    position: relative;
+}
+
+.products__item:hover {
+    background-color: #9F9F9F;
 }
 
 .products__img {
     display: block;
+
 }
 
 .products__description {
@@ -481,16 +513,24 @@ input[type=email]:focus {
     justify-content: space-between;
 }
 
-.footer__img-social {
-    fill: var(--black-color);
-    width: 14px;
-    height: 17px;
-}
-
 .footer__copyright_text {
     font-size: 16px;
     line-height: 19px;
     color: var(--smoky-color);
+}
+
+.footer__img-social {
+    fill: var(--black-color);
+    width: 15px;
+    height: 15px;
+    padding: 9px;
+}
+
+.footer__link-social {
+    border: 0;
+    outline: 0;
+    width: 32px;
+    height: 32px;
 }
 
 .footer__list-social {
@@ -507,16 +547,7 @@ input[type=email]:focus {
     background-color: var(--white-color);
 }
 
-.footer__item-social:hover {
+.footer__img-social:hover {
+    fill: var(--white-color);
     background-color: var(--dark-pink-color);
-    fill: var(--white-color);
-}
-
-.footer__link-social:hover {
-    background-color: var(--dark-pink-color);
-    fill: var(--white-color);
-}
-
-.footer__item-social:hover {
-    fill: var(--white-color);
 }
