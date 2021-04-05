@@ -3,16 +3,16 @@
     --pink-color: #F1E4E6;
     --dark-pink-color: #F16D7F;
     --pink-cololor-button: #E05C6E;
+    --product-button-all: #FF6A6A;
     --gray-color: #F8F8F8;
     --white-color: #ffffff;
     --gray-link-menu-color: #6F6E6E;
     --white-color-subscribe: #E1E1E1;
     --smoky-color: #fbfbfb;
-    --header__button-color: #E8E8E8;
+    --header-button-color: #E8E8E8;
+    --registration-banner-color: #F8F3F4;
+
 }
-
-
-
 
 body {
     font-family: Lato;
@@ -103,12 +103,12 @@ body {
 
 
 
-.header__button:hover+.header__navigation {
+.header__burger:hover+.header__navigation {
     display: block;
 
 }
 
-.header__button:hover {
+.header__burger:hover {
     fill: var(--dark-pink-color);
 }
 
@@ -131,12 +131,28 @@ body {
     margin: 0 41px 0 0;
 }
 
-.header__button {
+.header__burger {
     background: transparent;
     border: none;
-    fill: var(--header__button-color);
+    fill: var(--header-button-color);
     margin: 0 33px 0 0;
     cursor: pointer;
+}
+
+.header__burger-img {
+    width: 32px;
+    height: 23px;
+}
+
+.header__personal_account {
+    width: 32px;
+    height: 23px;
+    fill: var(--header-button-color);
+    cursor: pointer;
+}
+
+.header__personal_account:hover {
+    fill: var(--dark-pink-color);
 }
 
 
@@ -324,11 +340,12 @@ body {
 }
 
 .product_button__all {
-    background-color: var(--dark-pink-color);
-    border: 1px solid #FF6A6A;
+    outline: 1px solid var(--product-button-all);
+    border: 0;
     font-size: 16px;
     line-height: 19px;
-    color: var(--white-color);
+    color: var(--dark-pink-color);
+    background: none;
     padding: 13px 38px;
     margin: 0 auto;
     display: block;
@@ -553,4 +570,73 @@ input[type=email]:focus {
 .footer__img-social:hover {
     fill: var(--white-color);
     background-color: var(--dark-pink-color);
+}
+
+
+/* registration page */
+
+.registration__banner {
+    height: 148px;
+    background: var(--registration-banner-color);
+    margin-bottom: 64px;
+}
+
+.registration__title {
+    color: var(--dark-pink-color);
+    text-transform: uppercase;
+    padding: 59px 0 0 230px;
+}
+
+.registration__form {
+    margin-left: 230px;
+    margin-right: 129px;
+    width: 360px;
+}
+
+label {
+    display: block;
+}
+
+.registration__label {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: var(--black-color);
+}
+
+.registration__label-details {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    text-transform: inherit;
+    margin-bottom: 20px;
+    color: var(--black-color);
+}
+
+.registration__input {
+    width: 359px;
+    height: 44px;
+    margin-bottom: 21px;
+}
+
+.registration__text {
+    margin-top: -6px;
+}
+
+
+.registration__button {
+    background-color: var(--dark-pink-color);
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--white-color);
+    padding: 13px 38px;
 }
