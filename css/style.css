@@ -120,14 +120,13 @@ body {
     width: 199px;
     height: 728px;
     left: 178px;
-    top: 51px;
+    top: 62px;
     padding: 37px 0 0 34px;
     background: var(--white-color);
 }
 
 .header__burger:hover+.header__navigation {
     display: block;
-
 }
 
 .header__burger:hover {
