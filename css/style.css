@@ -43,6 +43,28 @@ body {
     position: relative;
 }
 
+
+.header__box-left {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-link {
+    cursor: pointer;
+    margin: 0 41px 0 0;
+    width: 44px;
+    height: 38px;
+}
+
+.header__logo {
+    width: 44px;
+    height: 38px;
+}
+
+.header__search {
+    display: flex;
+}
+
 .header__closing-img {
     position: absolute;
     left: 203px;
@@ -88,6 +110,8 @@ body {
 
 .header__list-navigation {
     position: relative;
+    display: flex;
+    align-items: baseline;
 }
 
 .header__navigation {
@@ -100,8 +124,6 @@ body {
     padding: 37px 0 0 34px;
     background: var(--white-color);
 }
-
-
 
 .header__burger:hover+.header__navigation {
     display: block;
@@ -127,15 +149,11 @@ body {
     min-height: 75px;
 }
 
-.header__logo {
-    margin: 0 41px 0 0;
-}
-
 .header__burger {
     background: transparent;
     border: none;
     fill: var(--header-button-color);
-    margin: 0 33px 0 0;
+    margin: 0 25px 0 0;
     cursor: pointer;
 }
 
@@ -145,8 +163,8 @@ body {
 }
 
 .header__personal_account {
-    width: 32px;
-    height: 23px;
+    width: 29px;
+    height: 29px;
     fill: var(--header-button-color);
     cursor: pointer;
 }
@@ -156,8 +174,45 @@ body {
 }
 
 
-.header__link {
-    margin: 0 33px 0 0;
+.header__cart {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.header__cart-number {
+    background-color: var(--dark-pink-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 23px;
+    top: -5px;
+    padding: 2px 6px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.header__cart-link {
+    width: 32px;
+    height: 29px;
+    cursor: pointer;
+}
+
+.header__cart-img:hover {
+    fill: var(--dark-pink-color);
+}
+
+.header__cart-img {
+    width: 32px;
+    height: 29px;
+    fill: var(--header-button-color);
+}
+
+.header__registration-link {
+    margin: 0 42px 0 0;
 }
 
 .brand {
@@ -450,8 +505,6 @@ footer {
 
 .footer__subscribe_form {
     background: var(--white-color-subscribe);
-    width: 178px;
-    height: 0px;
     margin-top: 32px;
     border-radius: 50px 0 0 50px;
 
@@ -498,9 +551,10 @@ footer {
 }
 
 .footer__subscribe_button {
+    height: 49px;
+    width: 100px;
     font-size: 14px;
     line-height: 17px;
-    padding: 22px;
     border: 0;
     background-color: var(--pink-cololor-button);
     border-radius: 0 50px 50px 0;
@@ -510,10 +564,11 @@ footer {
 }
 
 input[type=email] {
-    padding: 30px;
+    padding-left: 22px;
+    height: 47px;
+    width: 205px;
     outline: 0;
     border: 0;
-    margin-right: -3px;
 }
 
 input[type=email]:focus {
