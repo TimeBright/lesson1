@@ -11,6 +11,7 @@
     --smoky-color: #fbfbfb;
     --header-button-color: #E8E8E8;
     --registration-banner-color: #F8F3F4;
+    --registration-text-color: #B1B1B1;
 
 }
 
@@ -63,6 +64,34 @@ body {
 
 .header__search {
     display: flex;
+}
+
+.header__search-input {
+    padding-left: 22px;
+    height: 28px;
+    width: 130px;
+    margin-right: 7px;
+    outline: 0;
+    border: 0;
+}
+
+.header__search-button {
+    width: 27px;
+    background: none;
+    height: 30px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.header__search-button::before {
+    content: '';
+    background-image: url(../img/loupe.svg);
+    background-size: 26px;
+    padding: 6px 14px;
+    margin-left: -7px;
+    background-position-x: left;
+    background-repeat: no-repeat;
 }
 
 .header__closing-img {
@@ -119,7 +148,7 @@ body {
     display: none;
     width: 199px;
     height: 728px;
-    left: 178px;
+    left: 187px;
     top: 62px;
     padding: 37px 0 0 34px;
     background: var(--white-color);
@@ -629,6 +658,10 @@ input[type=email]:focus {
 
 /* registration page */
 
+.registration {
+    display: flex;
+}
+
 .registration__banner {
     height: 148px;
     background: var(--registration-banner-color);
@@ -642,8 +675,7 @@ input[type=email]:focus {
 }
 
 .registration__form {
-    margin-left: 230px;
-    margin-right: 129px;
+    margin: 0 129px 96px 230px;
     width: 360px;
 }
 
@@ -659,6 +691,18 @@ label {
     text-transform: capitalize;
     margin-bottom: 20px;
     color: var(--black-color);
+}
+
+
+.registration__checkfloor {
+    display: flex;
+    margin: 31px 0 33px 0;
+}
+
+.registration__checkfloor-radio {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
 }
 
 .registration__label-details {
@@ -677,8 +721,19 @@ label {
     margin-bottom: 21px;
 }
 
+.registration__input-last {
+    width: 359px;
+    height: 44px;
+    margin-bottom: 15px;
+}
+
 .registration__text {
-    margin-top: -6px;
+    margin-bottom: 39px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--registration-text-color);
 }
 
 
@@ -693,4 +748,33 @@ label {
     text-transform: uppercase;
     color: var(--white-color);
     padding: 13px 38px;
+}
+
+.registration__title-list {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--black-color);
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+
+.registration__list-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--black-color);
+    margin-bottom: 21px;
+}
+
+.registration__title-item-li {}
+
+.registration__title-item-li::before {
+    content: '';
+    background-image: url(../img/item.svg);
+    background-size: 26px;
+    padding: 6px 14px;
 }

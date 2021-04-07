@@ -110,20 +110,22 @@
             <form action="#">
                 <fieldset>
                     
-<label for="name" class="registration__label">your name</label>
+<legend for="name" class="registration__label">your name</legend>
 
 <input class="registration__input" id="name" type="text"  placeholder="First Name">
 <input class="registration__input" id="name" type="text" placeholder="Last Name">
 
-<input type="radio" class="radio" id="radio" />
+<div class="registration__checkfloor">
+<input type="radio" class="registration__checkfloor-radio" id="radio" />
 <label for="radio">Male</label>
 
-<input type="radio" class="radio" id="radio" />
+<input type="radio" class="registration__checkfloor-radio" id="radio" />
 <label for="radio">Female</label>
+</div>
 
 <label for="name" class="registration__label-details">Login details</label>
 <input class="registration__input" type="text">
-<input class="registration__input" type="text">
+<input class="registration__input-last" type="text">
 
 <p class="registration__text"> use 8 or more characters, 
 with at least 1 number 
@@ -133,10 +135,22 @@ and a mixture of uppercase and lowercase letters</p>
         </fieldset>
         </div>
 
-        <div>
+        <div class="registration__list">
 
-            LOYALTY HAS ITS PERKS
+            <h2 class="registration__title-list">loyalty has its perks</h2>
+                <p class="registration__list-text">Get in on the loyalty program where you can 
+                earn points and unlock serious perks. 
+                Starting with these as soon as you join:
+            </p>
 
+            <ul class="registration__title-item">
+<li class="registration__title-item-li">15% off welcome offer</li>
+<li class="registration__title-item-li">Free shipping, returns and exchanges on all orders</li>
+<li class="registration__title-item-li">$10 off a purchase on your birthday</li>
+<li class="registration__title-item-li">Early access to products</li>
+<li class="registration__title-item-li">Exclusive offers & rewards</li>
+
+            </ul>
         </div>
 
         </section>
