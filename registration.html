@@ -29,12 +29,11 @@
                         </svg>
             </a>
                 <div class="header__search">
-                    <img src="./img/loupe.svg" alt="loupe" width="26" height="28">
                     <form action="#" method="GET">
                         <fieldset>
-                            <input type="text">
-                            <button type="submit"></button></fieldset>
-                    </form>    
+                            <input type="text" class="header__search-input">
+                            <button type="submit" class="header__search-button"></button></fieldset>
+                    </form>
                 </div>
             </div>
             <div class="header__list-navigation">
@@ -100,6 +99,7 @@
         </div>
     </header>
 
+
     <section class="registration__banner">
 <h1 class="registration__title">registration</h1>
     </section>
@@ -116,16 +116,17 @@
 <input class="registration__input" id="name" type="text" placeholder="Last Name">
 
 <div class="registration__checkfloor">
-<input type="radio" class="registration__checkfloor-radio" id="radio" />
-<label for="radio">Male</label>
 
-<input type="radio" class="registration__checkfloor-radio" id="radio" />
-<label for="radio">Female</label>
+<input name="checkfloor" type="radio" class="registration__checkfloor-radio" id="Male"/>
+<label for="Male">Male</label>
+
+<input name="checkfloor" type="radio" class="registration__checkfloor-radio" id="Female" />
+<label for="Female">Female</label>
 </div>
 
 <label for="name" class="registration__label-details">Login details</label>
-<input class="registration__input" type="text">
-<input class="registration__input-last" type="text">
+<input class="registration__input" type="email" placeholder="Email">
+<input class="registration__input-last" type="password" placeholder="Password">
 
 <p class="registration__text"> use 8 or more characters, 
 with at least 1 number 
@@ -142,42 +143,16 @@ and a mixture of uppercase and lowercase letters</p>
                 earn points and unlock serious perks. 
                 Starting with these as soon as you join:
             </p>
-
             <ul class="registration__title-item">
-<li class="registration__title-item-li">15% off welcome offer</li>
-<li class="registration__title-item-li">Free shipping, returns and exchanges on all orders</li>
-<li class="registration__title-item-li">$10 off a purchase on your birthday</li>
-<li class="registration__title-item-li">Early access to products</li>
-<li class="registration__title-item-li">Exclusive offers & rewards</li>
+    <li class="registration__title-item-li">15% off welcome offer</li>
+    <li class="registration__title-item-li">Free shipping, returns and exchanges on all orders</li>
+    <li class="registration__title-item-li">$10 off a purchase on your birthday</li>
+    <li class="registration__title-item-li">Early access to products</li>
+    <li class="registration__title-item-li">Exclusive offers & rewards</li>
 
             </ul>
         </div>
 
-        </section>
-
-        <section class="bottom">
-            <ul class="bottom__list">
-                <li class="bottom__item">
-
-                    <img src="./img/car.png" alt="Free Delivery" class="bottom__img" />
-                    <h2 class="bottom__title">Free Delivery</h2>
-                    <p class="bottom__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
-                        with extensive
-                        models.</p>
-                </li>
-                <li class="bottom__item">
-                    <img src="./img/Sales.png" alt="Sales & discounts" class="bottom__img" />
-                    <h2 class="bottom__title">Sales & discounts</h2>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.</p>
-                </li>
-                <li class="bottom__item">
-                    <img src="./img/Quality.png" alt="Quality assurance" class="bottom__img" />
-                    <h2 class="bottom__title">Quality assurance</h2>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.</p>
-                </li>
-            </ul>
         </section>
     </main>
 
