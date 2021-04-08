@@ -1,0 +1,142 @@
+.registration {
+    display: flex;
+}
+
+.registration__banner {
+    height: 148px;
+    background: $registration-banner-color;
+    margin-bottom: 64px;
+}
+
+.registration__title {
+    color: $dark-pink-color;
+    text-transform: uppercase;
+    padding: 59px 0 0 230px;
+}
+
+.registration__form {
+    margin: 0 129px 96px 230px;
+    width: 360px;
+}
+
+.registration__label {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: $black-color;
+}
+
+
+.registration__checkfloor {
+    display: flex;
+    margin: 31px 0 33px 0;
+}
+
+.registration__checkfloor-radio {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+.registration__label-details {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    text-transform: inherit;
+    margin-bottom: 20px;
+    color: $black-color;
+}
+
+.registration__input {
+    margin-bottom: 15px;
+    width: 337px;
+    height: 38px;
+    padding-left: 16px;
+}
+
+.registration__input-last {
+    margin-bottom: 15px;
+    width: 337px;
+    height: 38px;
+    padding-left: 16px;
+}
+
+.registration__text {
+    margin-bottom: 39px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: $registration-text-color;
+}
+
+
+.registration__button {
+    width: 167px;
+    height: 50px;
+    background-color: $dark-pink-color;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $white-color;
+    padding: 13px 29px;
+    cursor: pointer;
+}
+
+.registration__button::after {
+    content: '';
+    background-image: url(../img/registration_arrow.svg);
+    padding: 0px 4px 0px 13px;
+    margin: 0 29px 0 20px;
+    background-position: center;
+    height: 10px;
+    background-repeat: no-repeat;
+}
+
+.registration__title-list {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: $black-color;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+
+.registration__list-text {
+    width: 652px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: $black-color;
+    margin-bottom: 21px;
+}
+
+.registration__title-item-li {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: $black-color;
+    margin-bottom: 16px;
+}
+
+.registration__title-item-li::before {
+    content: '';
+    background-image: url(../img/item.svg);
+    background-size: 20px;
+    background-position-y: center;
+    padding: 0px 15px 0px 8px;
+    background-repeat: no-repeat;
+    margin-right: 21px;
+}

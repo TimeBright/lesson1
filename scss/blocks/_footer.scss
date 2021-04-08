@@ -1,0 +1,132 @@
+footer {
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 448px;
+}
+
+.footer__section_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__text {
+    font-size: 20px;
+    line-height: 24px;
+    color: $footer-text;
+    text-align: center;
+    width: 359px;
+}
+
+.footer__text_italic {
+    font-style: italic;
+}
+
+.footer__img {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 30px;
+}
+
+.footer__title_subscribe {
+    font-size: 17px;
+    line-height: 167.2%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $footer-text;
+    width: 557px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__title_subscribe_two {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer__subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer__subscribe_form {
+    background: $white-color-subscribe;
+    margin-top: 32px;
+    border-radius: 50px 0 0 50px;
+    padding-left: 22px;
+    height: 47px;
+    width: 205px;
+    outline: 0;
+    border: 0;
+}
+
+.footer__subscribe_button {
+    height: 49px;
+    width: 100px;
+    font-size: 14px;
+    line-height: 17px;
+    border: 0;
+    background-color: $pink-cololor-button;
+    border-radius: 0 50px 50px 0;
+    color: $white-color;
+    outline: 0;
+    cursor: pointer;
+}
+
+.footer__bottom {
+    background-color: $black-color;
+}
+
+.footer__bottom_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__copyright_text {
+    font-size: 16px;
+    line-height: 19px;
+    color: $smoky-color;
+}
+
+.footer__img-social {
+    fill: $black-color;
+    width: 15px;
+    height: 15px;
+    padding: 9px;
+}
+
+.footer__link-social {
+    border: 0;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+}
+
+.footer__list-social {
+    display: flex;
+}
+
+.footer__item-social {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    margin: 24px 8px 24px 0px;
+    align-items: center;
+    background-color: $white-color;
+}
+
+.footer__img-social:hover {
+    fill: $white-color;
+    background-color: $dark-pink-color;
+}

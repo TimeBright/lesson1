@@ -1,0 +1,35 @@
+.bottom {
+    background-color: $black-color;
+    min-height: 341px;
+    margin-top: 95px;
+    color: $smoky-color;
+}
+
+.bottom__list {
+    display: flex;
+    padding: 103px 0;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.bottom__item {
+    width: 360px;
+    height: 130px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.bottom__img {
+    width: 45px;
+}
+
+.bottom__title {
+    margin: 28px 0 16px 0;
+}
+
+.bottom__text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+    min-width: 360px;
+}
