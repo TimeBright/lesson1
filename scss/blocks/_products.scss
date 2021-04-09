@@ -93,7 +93,7 @@
 
 .product__button:hover {
     display: block;
-    background: rgb(58 56 56 / 55%);
+    background: $product-button;
     border: 0;
     outline: 1px solid $product-button-color;
 }
