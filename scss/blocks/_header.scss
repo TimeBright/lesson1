@@ -23,15 +23,6 @@
         display: flex;
     }
 
-    &__search-input {
-        padding-left: 22px;
-        height: 28px;
-        width: 130px;
-        margin-right: 7px;
-        outline: 0;
-        border: 0;
-    }
-
     &__search-button {
         width: 27px;
         background: none;
@@ -40,6 +31,28 @@
         border: 0;
         cursor: pointer;
     }
+
+    &__search-input {
+        padding-left: 22px;
+        height: 28px;
+        width: 130px;
+        margin-right: 7px;
+        display: none;
+        outline: 0;
+        border: 0;
+    }
+
+    &__search-button:hover+&__search-input {
+        display: block;
+    }
+
+    &__search-button:hover {
+        display: block;
+    }
+
+    // &__search-input:hover {
+    //     display: block;
+    // }
 
     &__search-button::before {
         content: '';
@@ -104,13 +117,14 @@
         width: 199px;
         height: 728px;
         left: 187px;
-        top: 62px;
+        top: 50px;
         padding: 37px 0 0 34px;
         background: $white-color;
     }
 
-    &__burger:hover+.header__navigation {
+    &__burger:hover+&__navigation {
         display: block;
+        z-index: 9;
     }
 
     &__burger:hover {
@@ -128,15 +142,15 @@
     &__container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        min-height: 75px;
+        align-items: baseline;
+        padding: 16px 0 0 0;
     }
 
     &__burger {
         background: transparent;
         border: none;
         fill: $header-button-color;
-        margin: 0 25px 0 0;
+        margin: 0 34px 0 0;
         cursor: pointer;
     }
 
@@ -195,6 +209,39 @@
     }
 
     &__registration-link {
-        margin: 0 42px 0 0;
+        margin: 0 25px 0 0;
     }
+}
+
+
+@media (max-width: 1600px) {
+    .header__burger {
+        margin: 0 25px 0 0;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 16px;
+    }
+
+
+    .header__burger {
+        margin: 0 25px 0 0;
+    }
+
+}
+
+@media (max-width: 1600px) {
+    .container {
+        width: 96%;
+    }
+
+    .header__burger {
+        margin: 0 25px 0 0;
+    }
+
+
 }

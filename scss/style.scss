@@ -1,6 +1,7 @@
 @import './variables';
-@import './reset';
 @import './general';
+@import './mixins';
+@import './reset';
 @import './blocks/header';
 @import './blocks/brand';
 @import './blocks/promotions';
@@ -8,3 +9,4 @@
 @import './blocks/bottom';
 @import './blocks/footer';
 @import './blocks/registration';
+@import './blocks/cart';

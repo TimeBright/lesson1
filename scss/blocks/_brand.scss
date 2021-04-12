@@ -1,5 +1,6 @@
 .brand__section {
     background: $pink-color;
+    position: relative;
 }
 
 .brand {
@@ -10,12 +11,23 @@
     margin-bottom: 65px;
 }
 
+.brand__img {
+    width: 800px;
+    height: 765px;
+}
+
 .brand__title-container {
     background: $pink-color;
     flex-grow: 1;
     padding: 0 0 0 92px;
     display: flex;
     align-items: center;
+}
+
+.brand__line {
+    background: $dark-pink-color;
+    margin-right: 16px;
+    padding: 0px 2px 92px 10px;
 }
 
 .brand__title {
@@ -34,4 +46,31 @@
 
 .brand__pink-sub-title {
     color: $dark-pink-color;
+}
+
+@media (max-width: 768px) {
+
+
+    .brand {
+        margin-bottom: 20px;
+    }
+
+    .brand__img {
+        width: 50%;
+        height: auto;
+    }
+
+    .brand__title {
+        font-size: 43px;
+        line-height: 53px;
+    }
+
+    .brand__title-container {
+        padding: 0 0 0 40px;
+    }
+
+    .brand__sub-title {
+        font-size: 24px;
+    }
+
 }

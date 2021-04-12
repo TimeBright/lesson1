@@ -11,11 +11,11 @@
 .registration__title {
     color: $dark-pink-color;
     text-transform: uppercase;
-    padding: 59px 0 0 230px;
+    padding: 59px 0 0 0px;
 }
 
 .registration__form {
-    margin: 0 129px 96px 230px;
+    margin: 0 129px 96px 0px;
     width: 360px;
 }
 
@@ -28,7 +28,6 @@
     margin-bottom: 20px;
     color: $black-color;
 }
-
 
 .registration__checkfloor {
     display: flex;

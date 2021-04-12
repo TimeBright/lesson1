@@ -19,7 +19,7 @@
     margin: 0 0 30px;
 }
 
-.promotions__item a {
+.promotions__item-link {
     text-decoration: none;
 }
 
@@ -45,15 +45,27 @@
 }
 
 .promotions__title {
-    font-size: 16px;
-    line-height: 19px;
+    @include font(16px, 19px, 400);
     text-align: center;
-    color: var(--white-color);
+    color: $white-color;
 }
 
 .promotions__text {
-    color: var(--dark-pink-color);
+    color: $dark-pink-color;
     font-size: 24px;
     font-weight: 600;
     margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    .promotions__item {
+        width: 232px;
+        min-height: 167px;
+        margin: 0 0 20px;
+    }
+    .promotions__item--accesories {
+        width: 100%;
+    }
 }
