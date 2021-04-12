@@ -1,4 +1,4 @@
-footer {
+.footer {
     background-image: url(../img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -8,7 +8,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 448px;
+    padding: 86px 0 156px 0;
 }
 
 .footer__section_left {
@@ -129,4 +129,21 @@ footer {
 .footer__img-social:hover {
     fill: $white-color;
     background-color: $dark-pink-color;
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        background-size: cover;
+    }
+
+    .footer__section {
+        display: flex;
+        flex-direction: column;
+        padding: 54px 0 140px 0;
+    }
+
+    .footer__section_left {
+        margin-bottom: 48px;
+    }
 }

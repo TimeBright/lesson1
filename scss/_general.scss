@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    width: 1140px;
+    width: 71%;
     margin: 0 auto;
 }
 
@@ -60,4 +60,11 @@ body {
 
 label {
     display: block;
+}
+
+
+@media (max-width: 1600px) {
+    .container {
+        width: 96%;
+    }
 }

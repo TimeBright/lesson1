@@ -56,3 +56,16 @@
     font-weight: 600;
     margin-top: 10px;
 }
+
+
+@media (max-width: 768px) {
+
+    .promotions__item {
+        width: 232px;
+        min-height: 167px;
+        margin: 0 0 20px;
+    }
+    .promotions__item--accesories {
+        width: 100%;
+    }
+}
