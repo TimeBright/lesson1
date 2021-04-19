@@ -2,6 +2,8 @@
     height: 148px;
     background: $registration-banner-color;
     margin-bottom: 64px;
+    display: flex;
+    align-items: baseline;
 }
 
 
@@ -9,4 +11,17 @@
     color: $dark-pink-color;
     text-transform: uppercase;
     padding: 59px 0 0 0px;
+}
+
+.product__breadcrumbs {
+    color: $gray-link-menu-color;
+    text-transform: uppercase;
+    font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+}
+
+.product__breadcrumbs-arrivals {
+    color: $dark-pink-color;
 }
