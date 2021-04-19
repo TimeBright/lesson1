@@ -65,7 +65,23 @@
         min-height: 167px;
         margin: 0 0 20px;
     }
+
     .promotions__item--accesories {
         width: 100%;
     }
+}
+
+@media (max-width: 375px) {
+
+    .promotions__list {
+        justify-content: center;
+        margin: 0 0 32px;
+    }
+
+    .promotions__item {
+        width: 343px;
+        min-height: 247px;
+        margin: 0 0 32px;
+    }
+
 }

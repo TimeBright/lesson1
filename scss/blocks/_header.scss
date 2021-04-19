@@ -213,12 +213,10 @@
     }
 }
 
-
 @media (max-width: 1600px) {
     .header__burger {
         margin: 0 25px 0 0;
     }
-
 
 }
 
@@ -227,21 +225,32 @@
         padding: 0 16px;
     }
 
-
     .header__burger {
         margin: 0 25px 0 0;
     }
-
 }
 
-@media (max-width: 1600px) {
-    .container {
-        width: 96%;
+@media (max-width:375px) {
+
+    .header {
+        padding: 0;
+    }
+
+    .header__container {
+        align-items: center;
+        padding: 16px 0 16px 0;
     }
 
     .header__burger {
-        margin: 0 25px 0 0;
+        margin: 0;
     }
 
+    .header__registration-link {
+        display: none;
+    }
+
+    .header__cart {
+        display: none;
+    }
 
 }

@@ -51,6 +51,7 @@
     font-weight: bold;
 }
 
+
 .footer__subscribe {
     display: flex;
     flex-direction: column;
@@ -146,4 +147,58 @@
     .footer__section_left {
         margin-bottom: 48px;
     }
+}
+
+@media (max-width: 375px) {
+    .footer__text {
+        font-size: 18px;
+        line-height: 22px;
+        width: 343px;
+    }
+
+    .footer__section {
+        padding: 54px 0 109px 0;
+    }
+
+    .footer__section_left {
+        margin-bottom: 59px;
+    }
+
+    .footer__title_subscribe_two {
+        line-height: 153.2%;
+    }
+
+    .footer__text-subscribe {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .footer__subscribe_form {
+        margin-top: 22px;
+    }
+
+    .footer__bottom {
+        height: 143px;
+    }
+
+    .footer__bottom_main {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer__copyright_text {
+        order: 1;
+        margin-bottom: 9px;
+    }
+
+    .footer__list-social {
+        order: 0;
+    }
+
+    .footer__item-social {
+        margin: 43px 8px 40px 0px;
+    }
+
+
+
 }
