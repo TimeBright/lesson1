@@ -74,6 +74,20 @@ label {
   }
 }
 
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato-bold.woff") format("woff"), url("../fonts/lato-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato-regular.woff") format("woff"), url("../fonts/lato-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -701,10 +715,20 @@ table {
   align-items: baseline;
 }
 
+.product__header-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .product__title {
   color: #F16D7F;
   text-transform: uppercase;
   padding: 59px 0 0 0px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .product__breadcrumbs {
@@ -718,6 +742,31 @@ table {
 
 .product__breadcrumbs-arrivals {
   color: #F16D7F;
+}
+
+.product__banner {
+  position: relative;
+  z-index: 0;
+}
+
+.w-100 {
+  height: 777px;
+}
+
+.product__main {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.product__main-collection {
+  top: -50px;
+  width: 1140px;
+  position: relative;
+  height: 601px;
+  display: flex;
+  z-index: 1;
+  border: 1px solid #EAEAEA;
 }
 
 .bottom {
