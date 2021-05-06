@@ -42,6 +42,7 @@
     background-image: url("../img/promotions-accesories2.jpg");
     background-size: cover;
     width: 100%;
+    min-height: 180px;
 }
 
 .promotions__title {
@@ -82,6 +83,10 @@
         width: 343px;
         min-height: 247px;
         margin: 0 0 32px;
+    }
+
+    .promotions__item--accesories {
+        min-height: 114px;
     }
 
 }

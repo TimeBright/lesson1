@@ -1,0 +1,8 @@
+.catalog__product{
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: 581px 581px 581px;
+    border: aquamarine 1px solid;
+    column-gap: 30px;
+    row-gap: 30px;
+}
